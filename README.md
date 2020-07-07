@@ -248,3 +248,11 @@ Generates Uniform Resource Names (URN) for PHPStorm and remaps paths for the hos
 mg2 varnish <tool>
 ```
 Run varnish command line tools such as `varnishadm`, `varnishhist`, `varnishstat`, `varnishtop`, `varnishtest`, `varnishlog` etc.
+
+## Dedications
+
+Original Project Mage2click by  Dmitry Shkoliar 
+
+## License
+
+MIT
