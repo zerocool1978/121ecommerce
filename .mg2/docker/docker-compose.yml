@@ -44,7 +44,7 @@ services:
 
   dnsmasq:
     container_name: mg2.test__dnsmasq
-    image: mg121ecommerce/mg2:dnsmasq
+    image: zerocool78/mg2:dnsmasq
     ports:
       - "127.0.0.1:53:53/udp"
     labels:
