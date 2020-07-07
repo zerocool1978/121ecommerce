@@ -11,7 +11,7 @@ services:
       - traefik.enable=true
       - traefik.http.routers.mg121ecommerce-mg2.tls=true
       - traefik.http.routers.mg121ecommerce-mg2.entryPoints=https
-      - traefik.http.routers.mg121ecommerce-mg2.rule=Host(`mg2.test`)
+      - traefik.http.routers.mg121ecommerce-mg2.rule=Host(`mg121ecommerce.mg2.test`)
       - traefik.http.services.mg121ecommerce-mg2.loadbalancer.server.port=8080
     restart: ${MG2_GLOBAL_SERVICES_AUTO_START}
 

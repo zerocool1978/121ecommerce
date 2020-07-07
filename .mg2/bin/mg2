@@ -646,7 +646,7 @@ then
 
     mg2_msg "mg121ecommerce toolset is successfully installed!\n"
     mg2_msg "Run \`mg2 --help\` command for usage information.\n"
-    mg2_msg "Visit local https://mg2.test to check useful links to included services.\n\n"
+    mg2_msg "Visit local https://mg121ecommerce.mg2.test to check useful links to included services.\n\n"
 
     if [[ -z ${mg2_is_update} ]]
     then
