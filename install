@@ -31,3 +31,8 @@ sleep 2
 ./archive
 sleep 2
 ./mg2
+echo "127.0.0.1   mg121ecommerce.mg2.test" | sudo tee -a /etc/hosts > /dev/null
+echo "127.0.0.1   traefik.mg2.test" | sudo tee -a /etc/hosts > /dev/null
+echo "127.0.0.1   dnsmaq.mg2.test" | sudo tee -a /etc/hosts > /dev/null
+echo "127.0.0.1   mailhog.mg2.test" | sudo tee -a /etc/hosts > /dev/null
+echo "127.0.0.1   portainer.mg2.test" | sudo tee -a /etc/hosts > /dev/null
