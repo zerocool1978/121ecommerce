@@ -1,4 +1,4 @@
-<h1 align="center">zerocool78 - Magento Docker Toolset</h1> 
+<h1 align="center">mg121ecommerce - Magento Docker Toolset</h1> 
 
 <p align="center"><img src="assets/images/install.png" width="600" align="center" alt="zerocool78 Magento Docker environment and toolset" /></p>
 
