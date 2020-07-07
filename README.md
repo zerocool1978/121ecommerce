@@ -2,14 +2,8 @@
 
 <p align="center"><img src="assets/images/install.png" width="600" align="center" alt="zerocool78 Magento Docker environment and toolset" /></p>
 
-<p align="center">
-  <a href="https://github.com/magento/magento2" target="_blank"><img src="https://img.shields.io/badge/magento-2.X-brightgreen.svg?logo=magento&longCache=true&style=for-the-badge&logoColor=white" alt="Supported Magento Versions" /></a>
-  <a href="https://hub.docker.com/r/zerocool78/mg2/" target="_blank"><img src="https://img.shields.io/docker/pulls/zerocool78/mg2.svg?label=docker%20pulls&style=for-the-badge&logo=docker&logoColor=white&color=brightgreen" alt="Docker Hub Pulls" /></a>
-  <a href="https://zerocool78.slack.com/#general" target="_blank"><img src="https://img.shields.io/badge/chat-zerocool78-brightgreen.svg?style=for-the-badge&logo=slack" alt="zerocool78 in Slack"/></a>
-  <a href="https://twitter.com/intent/follow?screen_name=zerocool78" target="_blank"><img src="https://img.shields.io/twitter/follow/zerocool78?color=brightgreen&label=zerocool78&logo=twitter&logoColor=white&style=for-the-badge" /></a>
-</p>
 
-zerocool78 toolset is a system-wide command-line tool for creating and managing simultaneously running Magento Docker projects with insanely easy installation and configuration. It includes plenty of configurable services and useful commands for developing and project orchestration right out of the box. On macOS systems, mutagen.io tool will be bundled in the toolset for high-performance files sync between host and Docker containers.
+mg121ecommerce toolset is a system-wide command-line tool for creating and managing simultaneously running Magento Docker projects with insanely easy installation and configuration. It includes plenty of configurable services and useful commands for developing and project orchestration right out of the box. On macOS systems, mutagen.io tool will be bundled in the toolset for high-performance files sync between host and Docker containers.
 
 ## Table of contents
 
@@ -223,7 +217,7 @@ Restarts running project Docker services and starts all stopped ones. If service
 ```bash
 mg2 share [region] [--help]
 ```
-Starts sharing session over [ngrok](https://ngrok.com) secure tunnels. Command accepts an optional parameter to specify a region. Ex. `mg2 share eu`. Available regions are `us`, `eu`, `ap`, `au`, `sa`, `jp`, and `in`. By default, region is `us`. For proper functioning of this command, required dependencies will be installed. Please, visit [https://github.com/shkoliar/magento-ngrok](https://github.com/shkoliar/magento-ngrok) and [https://github.com/shkoliar/docker-ngrok](https://github.com/shkoliar/docker-ngrok) for more information. Run `mg2 share --help` for command usage information. 
+Starts sharing session over [ngrok](https://ngrok.com) secure tunnels. Command accepts an optional parameter to specify a region. Ex. `mg2 share eu`. Available regions are `us`, `eu`, `ap`, `au`, `sa`, `jp`, and `in`. By default, region is `us`. For proper functioning of this command, required dependencies will be installed. Run `mg2 share --help` for command usage information. 
 
 ```bash
 mg2 sign [domain [domain ...]]
@@ -264,29 +258,3 @@ Generates Uniform Resource Names (URN) for PHPStorm and remaps paths for the hos
 mg2 varnish <tool>
 ```
 Run varnish command line tools such as `varnishadm`, `varnishhist`, `varnishstat`, `varnishtop`, `varnishtest`, `varnishlog` etc.
-
-
-_Adding information about other CLI commands is in progress..._
-
-
-### Connecting to Database
-
-Project database can be easily accessed in a few ways - with help of optional phpMyAdmin service or with database managing applications by using a direct connection to the database via SSH tunnel.  
-Read the article at project's wiki page on how to connect to your project's database - <a href="https://github.com/zerocool78/mg2/wiki/Connecting-to-Database" target="_blank">Connecting to Database</a>
-
-### Debugging with Xdebug
-
-zerocool78 toolset supports Magento debugging with Xdebug out of the box. Only a few configuration steps are required.  
-Read the article at project's wiki page on how to use Xdebug with PHPStorm - <a href="https://github.com/zerocool78/mg2/wiki/Debugging-with-Xdebug" target="_blank">Debugging with Xdebug</a>
-
-## Authors Information
-
-### Dmitry Shkoliar
-<a href="https://www.zend.com/en/yellow-pages/ZEND026786" target="_blank">Zend Certified PHP Engineer</a>, Magento2, Docker, PWA, Varnish, JS, HTML5, Mobile, iOS, Android  
-Github: <a href="https://github.com/shkoliar" target="_blank">@shkoliar</a>  
-Twitter: <a href="https://twitter.com/shkoliar" target="_blank">@shkoliar</a>  
-Website: <a href="https://shkoliar.com" target="_blank">shkoliar.com</a>  
-
-## License
-
-[MIT](LICENSE)
