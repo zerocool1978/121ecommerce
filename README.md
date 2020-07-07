@@ -1,9 +1,9 @@
-<h1 align="center">mg121ecommerce - Magento Docker Toolset</h1> 
+<h1 align="center">Mg2 - Magento Docker Toolset</h1> 
 
 <p align="center"><img src="assets/images/install.png" width="600" align="center" alt="zerocool78 Magento Docker environment and toolset" /></p>
 
 
-mg121ecommerce toolset is a system-wide command-line tool for creating and managing simultaneously running Magento Docker projects with insanely easy installation and configuration. It includes plenty of configurable services and useful commands for developing and project orchestration right out of the box. On macOS systems, mutagen.io tool will be bundled in the toolset for high-performance files sync between host and Docker containers.
+Mg2 toolset is a system-wide command-line tool for creating and managing simultaneously running Magento Docker projects with insanely easy installation and configuration. It includes plenty of configurable services and useful commands for developing and project orchestration right out of the box. On macOS systems, mutagen.io tool will be bundled in the toolset for high-performance files sync between host and Docker containers.
 
 ## Table of contents
 
@@ -28,7 +28,7 @@ This configuration has been tested on macOS. Linux based systems still require t
 To install zerocool78 toolset to your system, simply run command below.
 
 ```bash
-curl -sL raw.githubusercontent.com/zerocool1978/121ecommerce/master/get | bash
+curl -sL raw.githubusercontent.com/zerocool1978/magento2-docker/master/get | bash
 ```
 
 ## What is included
