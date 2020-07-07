@@ -10,6 +10,6 @@
 [providers]
   [providers.docker]
     exposedByDefault = false
-    network = "m2c"
+    network = "mg2"
   [providers.file]
     filename = "/etc/traefik/dynamic.toml"

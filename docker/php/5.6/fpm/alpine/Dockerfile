@@ -1,6 +1,6 @@
 FROM    php:5.6-fpm-alpine
 
-LABEL   maintainer="Mage2click, Dmitry Shkoliar @shkoliar"
+LABEL   maintainer="zerocool78"
 
 ARG     PHPREDIS_VERSION=${PHPREDIS_VERSION:-4.3.0}
 ARG     AMQP_VERSION=${AMQP_VERSION:-1.9.4}

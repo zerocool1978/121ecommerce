@@ -1,6 +1,6 @@
 FROM        jpillora/dnsmasq:1.1
 
-LABEL       maintainer="Mage2click, Dmitry Shkoliar @shkoliar"
+LABEL       maintainer="zerocool78"
 
 COPY        conf/dnsmasq.conf /etc/dnsmasq/
 

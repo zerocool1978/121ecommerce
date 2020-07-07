@@ -2,10 +2,10 @@
 
 HOME="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
-docker build -t "mage2click/m2c:dnsmasq" "${HOME}/"
+docker build -t "zerocool78/mg2:dnsmasq" "${HOME}/"
 
 rm -rf "${HOME}/.docker"
 
 echo
-echo "docker push \"mage2click/m2c:dnsmasq\""
-echo "docker rmi -f \"mage2click/m2c:dnsmasq\""
+echo "docker push \"zerocool78/mg2:dnsmasq\""
+echo "docker rmi -f \"zerocool78/mg2:dnsmasq\""

@@ -1,6 +1,6 @@
 FROM        alpine:3.9
 
-LABEL       maintainer="Mage2click, Dmitry Shkoliar @shkoliar"
+LABEL       maintainer="zerocool78"
 
 ENV         UID=1000
 ENV         GID=1000

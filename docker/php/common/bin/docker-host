@@ -6,16 +6,16 @@ then
   echo -e "$(ip route | awk 'NR==1 {print $3}')\thost.docker.internal" >> /etc/hosts
 fi
 
-if [[ -f /usr/share/ca-certificates/m2c/rootCA.crt ]]
+if [[ -f /usr/share/ca-certificates/mg2/rootCA.crt ]]
 then
-    if ! grep -q -f /usr/share/ca-certificates/m2c/rootCA.crt /etc/ssl/cert.pem
+    if ! grep -q -f /usr/share/ca-certificates/mg2/rootCA.crt /etc/ssl/cert.pem
     then
-        cat /usr/share/ca-certificates/m2c/rootCA.crt >> /etc/ssl/cert.pem
+        cat /usr/share/ca-certificates/mg2/rootCA.crt >> /etc/ssl/cert.pem
     fi
 
-    if ! grep -q -f /usr/share/ca-certificates/m2c/rootCA.crt /etc/ssl/certs/ca-certificates.crt
+    if ! grep -q -f /usr/share/ca-certificates/mg2/rootCA.crt /etc/ssl/certs/ca-certificates.crt
     then
-        cat /usr/share/ca-certificates/m2c/rootCA.crt >> /etc/ssl/certs/ca-certificates.crt
-        ln -sf /usr/share/ca-certificates/m2c/rootCA.crt /etc/ssl/certs/ca-cert-Mage2click_RootCert_CA.pem
+        cat /usr/share/ca-certificates/mg2/rootCA.crt >> /etc/ssl/certs/ca-certificates.crt
+        ln -sf /usr/share/ca-certificates/mg2/rootCA.crt /etc/ssl/certs/ca-cert-mg121ecommerce_RootCert_CA.pem
     fi
 fi

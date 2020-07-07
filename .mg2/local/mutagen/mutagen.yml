@@ -7,8 +7,8 @@ sync:
       defaultFileMode: 0644
       defaultDirectoryMode: 0755
   src:
-    alpha: ./../..${M2C_CFG_MAGENTO_SRC:+/${M2C_CFG_MAGENTO_SRC}}/
-    beta: docker://${M2C_CFG_DOMAIN_NAME}__php/var/www/html
+    alpha: ./../..${MG2_CFG_MAGENTO_SRC:+/${MG2_CFG_MAGENTO_SRC}}/
+    beta: docker://${MG2_CFG_DOMAIN_NAME}__php/var/www/html
     configurationBeta:
       permissions:
         defaultOwner: app
@@ -17,7 +17,7 @@ sync:
       paths:
         - .idea
         - .vscode
-        - .m2c
+        - .mg2
         - /.env
         - /bin
         - /generated
@@ -27,8 +27,8 @@ sync:
         - /vendor
         - node_modules
   vendor:
-    alpha: docker://${M2C_CFG_DOMAIN_NAME}__php/var/www/html/vendor
-    beta: ./../..${M2C_CFG_MAGENTO_SRC:+/${M2C_CFG_MAGENTO_SRC}}/vendor
+    alpha: docker://${MG2_CFG_DOMAIN_NAME}__php/var/www/html/vendor
+    beta: ./../..${MG2_CFG_MAGENTO_SRC:+/${MG2_CFG_MAGENTO_SRC}}/vendor
     configurationAlpha:
       permissions:
         defaultOwner: app

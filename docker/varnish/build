@@ -6,11 +6,11 @@ VERSIONS=("4.1" "5.2" "6.2")
 
 for i in "${!VERSIONS[@]}"
 do
-    docker build -t "mage2click/m2c:varnish-${VERSIONS[$i]}-alpine" \
+    docker build -t "zerocool78/mg2:varnish-${VERSIONS[$i]}-alpine" \
         "${HOME}/${VERSIONS[$i]}/alpine/"
 
-    docker tag "mage2click/m2c:varnish-${VERSIONS[$i]}-alpine" \
-        "mage2click/m2c:varnish-${VERSIONS[$i]}-alpine"
+    docker tag "zerocool78/mg2:varnish-${VERSIONS[$i]}-alpine" \
+        "zerocool78/mg2:varnish-${VERSIONS[$i]}-alpine"
 done
 
 rm -rf "${HOME}/.docker"
@@ -21,6 +21,6 @@ echo
 
 for i in "${!VERSIONS[@]}"
 do
-    echo "docker push \"mage2click/m2c:varnish-${VERSIONS[$i]}-alpine\""
-    echo "docker rmi -f \"mage2click/m2c:varnish-${VERSIONS[$i]}-alpine\""
+    echo "docker push \"zerocool78/mg2:varnish-${VERSIONS[$i]}-alpine\""
+    echo "docker rmi -f \"zerocool78/mg2:varnish-${VERSIONS[$i]}-alpine\""
 done

@@ -16,5 +16,5 @@
         url = "localhost"
 
 [[tls.certificates]]
-  certFile = "/etc/ssl/certs/m2c.crt"
-  keyFile = "/etc/ssl/private/m2c.key"
+  certFile = "/etc/ssl/certs/mg2.crt"
+  keyFile = "/etc/ssl/private/mg2.key"

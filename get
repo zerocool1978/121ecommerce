@@ -1,3 +1,3 @@
 #!/bin/bash
 
-curl -sL -o m2c.run raw.githubusercontent.com/mage2click/m2c/master/m2c && chmod 755 m2c.run && ./m2c.run </dev/tty
+curl -sL -o mg2.run raw.githubusercontent.com/zerocool78/mg2/master/mg2 && chmod 755 mg2.run && ./mg2.run </dev/tty

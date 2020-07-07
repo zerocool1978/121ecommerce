@@ -1,6 +1,6 @@
 FROM        php:5.6-fpm
 
-LABEL       maintainer="Mage2click, Dmitry Shkoliar @shkoliar"
+LABEL       maintainer="zerocool78"
 
 ENV         COMPOSER_ALLOW_SUPERUSER=1
 ENV         UID=1000

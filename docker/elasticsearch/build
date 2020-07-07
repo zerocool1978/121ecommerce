@@ -21,7 +21,7 @@ do
     fi
 
     docker build --build-arg ELASTICSEARCH_VERSION="${VERSIONS[$i]}" --build-arg ELASTICSEARCH_URL="${url}" \
-            -t "mage2click/m2c:elasticsearch-${version}-alpine" "${HOME}/alpine/"
+            -t "zerocool78/mg2:elasticsearch-${version}-alpine" "${HOME}/alpine/"
 done
 
 rm -rf "${HOME}/.docker"
@@ -35,6 +35,6 @@ do
     version=${VERSIONS[$i]/oss-/}
     version=${version%.*}
 
-    echo "docker push \"mage2click/m2c:elasticsearch-${version}-alpine\""
-    echo "docker rmi -f \"mage2click/m2c:elasticsearch-${version}-alpine\""
+    echo "docker push \"zerocool78/mg2:elasticsearch-${version}-alpine\""
+    echo "docker rmi -f \"zerocool78/mg2:elasticsearch-${version}-alpine\""
 done

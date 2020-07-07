@@ -30,10 +30,10 @@ then
     echo -e "$(ip route | awk 'NR==1 {print $3}')\thost.docker.internal" >> /etc/hosts
 fi
 
-if [[ -f /usr/share/ca-certificates/m2c/rootCA.crt && -f /etc/ca-certificates.conf ]] && \
-    ! grep -q "m2c/rootCA.crt" /etc/ca-certificates.conf
+if [[ -f /usr/share/ca-certificates/mg2/rootCA.crt && -f /etc/ca-certificates.conf ]] && \
+    ! grep -q "mg2/rootCA.crt" /etc/ca-certificates.conf
 then
-    echo "m2c/rootCA.crt" >> /etc/ca-certificates.conf
+    echo "mg2/rootCA.crt" >> /etc/ca-certificates.conf
     update-ca-certificates
 fi
 

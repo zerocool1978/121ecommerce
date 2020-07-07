@@ -1,6 +1,6 @@
 FROM        alpine
 
-LABEL       maintainer="Mage2click, Dmitry Shkoliar @shkoliar"
+LABEL       maintainer="zerocool78"
 
 ENV         PATH=/usr/share/elasticsearch/bin:${PATH} \
             ES_TMPDIR=/usr/share/elasticsearch/tmp \

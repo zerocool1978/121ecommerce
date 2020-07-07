@@ -1,6 +1,6 @@
 FROM        nginx:1.17-alpine
 
-LABEL       maintainer="Mage2click, Dmitry Shkoliar @shkoliar"
+LABEL       maintainer="zerocool78"
 
 COPY        conf/default.conf /etc/nginx/conf.d/
 COPY        conf/html/index.html /usr/share/nginx/html/

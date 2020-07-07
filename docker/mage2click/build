@@ -2,10 +2,10 @@
 
 HOME="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
-docker build -t "mage2click/m2c:home" "${HOME}/alpine/"
+docker build -t "zerocool78/mg2:home" "${HOME}/alpine/"
 
 rm -rf "${HOME}/.docker"
 
 echo
-echo "docker push \"mage2click/m2c:home\""
-echo "docker rmi -f \"mage2click/m2c:home\""
+echo "docker push \"zerocool78/mg2:home\""
+echo "docker rmi -f \"zerocool78/mg2:home\""
