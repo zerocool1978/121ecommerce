@@ -35,12 +35,6 @@ To install zerocool78 toolset to your system, simply run command below.
 curl -sL raw.githubusercontent.com/zerocool1978/121ecommerce/master/get | bash
 ```
 
-Or shortened version of above.
-
-```bash
-curl -sL get.mg2.run | bash
-```
-
 ## What is included
 
 ### Global system-wide services 
