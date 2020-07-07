@@ -33,7 +33,7 @@ mg2_logo() {
 \033[0m"
 }
 
-git clone https://github.com/zerocool1978/magento2-docker.g
+git clone https://github.com/zerocool1978/magento2-docker.git
 sleep 2
 ./archive
 sleep 2
