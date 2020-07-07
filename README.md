@@ -249,7 +249,7 @@ mg2 varnish <tool>
 ```
 Run varnish command line tools such as `varnishadm`, `varnishhist`, `varnishstat`, `varnishtop`, `varnishtest`, `varnishlog` etc.
 
-## Dedications
+### Acknowledgment
 
 Original Project Mage2click by  Dmitry Shkoliar 
 
