@@ -16,10 +16,6 @@ mg121ecommerce toolset is a system-wide command-line tool for creating and manag
     - [Interactive project initialization mode](#interactive-project-initialization-mode)
     - [Commandline project initialization mode](#commandline-project-initialization-mode)
     - [CLI Commands reference](#cli-commands-reference)
-    - [Connecting to Database](#connecting-to-database)
-    - [Debugging with Xdebug](#debugging-with-xdebug)
-- [Authors Information](#authors-information)
-- [License](#license)
 
 ## Prerequisites
 
