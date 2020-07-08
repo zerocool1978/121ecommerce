@@ -37,6 +37,8 @@ echo "127.0.0.1   mg121ecommerce.mg2.test
 127.0.0.1   mailhog.mg2.test
 127.0.0.1   portainer.mg2.test" | sudo tee -a /etc/hosts > /dev/null
 sleep 1
-rm -rf magento2-docker install.run
-sleep 1
-cd ~/
+#cd ../
+#sleep 1
+#rm -rf magento2-docker install.run
+#sleep 1
+cd ~/Documents

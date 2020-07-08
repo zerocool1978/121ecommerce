@@ -55,6 +55,33 @@ services:
       - traefik.http.services.dnsmasq-mg2.loadbalancer.server.port=8080
     restart: ${MG2_GLOBAL_SERVICES_AUTO_START}
 
+
+  portainer:
+  container_name: mg2.test__portainer
+  image: portainer/portainer:${MG2_GLOBAL_PORTAINER}
+  volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
+    - portainer:/data
+  labels:
+    - traefik.enable=true
+    - traefik.http.routers.portainer-mg2.tls=true
+    - traefik.http.routers.portainer-mg2.entryPoints=https
+    - traefik.http.routers.portainer-mg2.rule=Host(`portainer.mg2.test`)
+    - traefik.http.services.portainer-mg2.loadbalancer.server.port=9000
+  restart: ${MG2_GLOBAL_SERVICES_AUTO_START}
+
+  mailhog:
+    container_name: mg2.test__mailhog
+    image: mailhog/mailhog:${MG2_GLOBAL_MAILHOG}
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.mailhog-mg2.tls=true
+      - traefik.http.routers.mailhog-mg2.entryPoints=https
+      - traefik.http.routers.mailhog-mg2.rule=Host(`mailhog.mg2.test`)
+      - traefik.http.services.mailhog-mg2.loadbalancer.server.port=8025
+    restart: ${MG2_GLOBAL_SERVICES_AUTO_START}
+volumes:
+  portainer:
 networks:
   default:
     name: mg2
