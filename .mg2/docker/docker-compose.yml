@@ -13,7 +13,7 @@ services:
       - traefik.http.routers.mg121ecommerce-mg2.entryPoints=https
       - traefik.http.routers.mg121ecommerce-mg2.rule=Host(`mg121ecommerce.mg2.test`)
       - traefik.http.services.mg121ecommerce-mg2.loadbalancer.server.port=8080
-    restart: ${MG2_GLOBAL_SERVICES_AUTO_START}
+    restart: always
 
   traefik:
     container_name: mg2.test__traefik
@@ -40,7 +40,7 @@ services:
       - traefik.http.routers.traefik-mg2.service=api@internal
       - traefik.http.routers.traefik-mg2.rule=Host(`traefik.mg2.test`)
       - traefik.http.services.api.loadbalancer.server.port=8080
-    restart: ${MG2_GLOBAL_SERVICES_AUTO_START}
+    restart: always
 
   dnsmasq:
     container_name: mg2.test__dnsmasq
@@ -53,12 +53,12 @@ services:
       - traefik.http.routers.dnsmasq-mg2.entryPoints=https
       - traefik.http.routers.dnsmasq-mg2.rule=Host(`dnsmasq.mg2.test`)
       - traefik.http.services.dnsmasq-mg2.loadbalancer.server.port=8080
-    restart: ${MG2_GLOBAL_SERVICES_AUTO_START}
+    restart: always
 
 
   portainer:
     container_name: mg2.test__portainer
-    image: portainer/portainer:${MG2_GLOBAL_PORTAINER}
+    image: portainer/portainer:1.24.0
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - portainer:/data
@@ -68,18 +68,18 @@ services:
       - traefik.http.routers.portainer-mg2.entryPoints=https
       - traefik.http.routers.portainer-mg2.rule=Host(`portainer.mg2.test`)
       - traefik.http.services.portainer-mg2.loadbalancer.server.port=9000
-    restart: ${MG2_GLOBAL_SERVICES_AUTO_START}
+    restart: always
 
   mailhog:
     container_name: mg2.test__mailhog
-    image: mailhog/mailhog:${MG2_GLOBAL_MAILHOG}
+    image: mailhog/mailhog:v1.0.0
     labels:
       - traefik.enable=true
       - traefik.http.routers.mailhog-mg2.tls=true
       - traefik.http.routers.mailhog-mg2.entryPoints=https
       - traefik.http.routers.mailhog-mg2.rule=Host(`mailhog.mg2.test`)
       - traefik.http.services.mailhog-mg2.loadbalancer.server.port=8025
-    restart: ${MG2_GLOBAL_SERVICES_AUTO_START}
+    restart: always
 volumes:
   portainer:
 networks:
