@@ -37,6 +37,6 @@ echo "127.0.0.1   dnsmaq.mg2.test" | sudo tee -a /etc/hosts > /dev/null
 echo "127.0.0.1   mailhog.mg2.test" | sudo tee -a /etc/hosts > /dev/null
 echo "127.0.0.1   portainer.mg2.test" | sudo tee -a /etc/hosts > /dev/null
 sleep 1
-rm -rf magento2-docker
+rm -rf magento2-docker install.run
 sleep 1
 cd ~/
