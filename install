@@ -24,8 +24,6 @@ mg2_logo() {
 }
 mg2_logo
 sleep 1
-cd ~/Documents
-sleep 1
 git clone https://github.com/zerocool1978/magento2-docker.git
 sleep 1
 cd magento2-docker/
