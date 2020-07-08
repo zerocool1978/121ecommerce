@@ -31,11 +31,11 @@ sleep 1
 ./archive
 sleep 1
 ./mg2
-echo "127.0.0.1   mg121ecommerce.mg2.test" | sudo tee -a /etc/hosts > /dev/null
-echo "127.0.0.1   traefik.mg2.test" | sudo tee -a /etc/hosts > /dev/null
-echo "127.0.0.1   dnsmaq.mg2.test" | sudo tee -a /etc/hosts > /dev/null
-echo "127.0.0.1   mailhog.mg2.test" | sudo tee -a /etc/hosts > /dev/null
-echo "127.0.0.1   portainer.mg2.test" | sudo tee -a /etc/hosts > /dev/null
+echo "127.0.0.1   mg121ecommerce.mg2.test
+127.0.0.1   traefik.mg2.test
+127.0.0.1   dnsmaq.mg2.test
+127.0.0.1   mailhog.mg2.test
+127.0.0.1   portainer.mg2.test" | sudo tee -a /etc/hosts > /dev/null
 sleep 1
 rm -rf magento2-docker install.run
 sleep 1
